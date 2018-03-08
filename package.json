@@ -1,0 +1,19 @@
+{
+  "name": "mpvue-webpack-target",
+  "version": "1.0.0",
+  "description": "为 webpack 专门增加的微信小程序的 target",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mpvue/mpvue-webpack-target.git"
+  },
+  "author": "anchengjian <anchengjian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^3.4.0"
+  },
+  "devDependencies": {}
+}
