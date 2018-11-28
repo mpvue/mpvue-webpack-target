@@ -148,7 +148,6 @@ class JsonpMainTemplatePlugin {
               "}"
             ]),
             "}",
-            "if(parentJsonpFunction) parentJsonpFunction(chunkIds, moreModules, executeModules);",
             "while(resolves.length) {",
             this.indent("resolves.shift()();"),
             "}",
