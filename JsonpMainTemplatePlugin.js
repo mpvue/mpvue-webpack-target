@@ -127,6 +127,12 @@ class JsonpMainTemplatePlugin {
           "",
           "// install a JSONP callback for chunk loading",
           `var parentJsonpFunction = global[${JSON.stringify(jsonpFunction)}];`,
+          "if (parentJsonpFunction) {",
+          this.indent([
+            "if (parentJsonpFunction.isMpvueLoaderInit) return;",
+            "parentJsonpFunction.isMpvueLoaderInit = true;",
+          ]),
+          "}",
           `global[${JSON.stringify(jsonpFunction)}] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {`,
           this.indent([
             "// add \"moreModules\" to the modules object,",
