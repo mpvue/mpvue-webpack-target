@@ -1,6 +1,6 @@
 {
   "name": "mpvue-webpack-target",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "为 webpack 专门增加的微信小程序的 target",
   "main": "index.js",
   "scripts": {
